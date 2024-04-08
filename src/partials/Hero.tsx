@@ -10,20 +10,21 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hola, nosotros somos <GradientText>EMBs UNAL</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
+          Sociedad de Ingeniería en Medicina y Biología{' '}
+          {/* <a className="text-cyan-400 hover:underline" href="/">
+            EMBs
+          </a>{' '} */}
+          del
+{' '}
           <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
+          Instituto de Ingenieros Eléctricos y Electrónicos
           </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          en la Universidad Nacional de Colombia.
         </>
       }
       avatar={

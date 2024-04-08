@@ -1,5 +1,9 @@
 ---
-import type { IFrontmatter } from 'astro-boilerplate-components';
+import {
+  type IFrontmatter,
+  GradientText,
+  Section,
+} from 'astro-boilerplate-components';
 
 import { CTA } from '@/partials/CTA';
 import { Hero } from '@/partials/Hero';
@@ -19,6 +23,32 @@ const { description } = AppConfig;
 
 <Base head={{ title, description }}>
   <Hero />
+  <Section>
+    <section class='grid grid-cols-4 gap-4'>
+      <article>
+        <GradientText class:list='text-xl'>Experiencia</GradientText>
+        <p>
+          Obtén experiencia investigativa, en difusión o formación según tus
+          preferencias y afinidades
+        </p>
+      </article>
+      <article>
+        <h2>Formacón</h2>
+        <p>Obtén apoyo para la introducción al campo de la investigación</p>
+      </article>
+      <article>
+        <h2>Innovación</h2>
+        <p>
+          Somos un espacio abierto para ejecutar proyectos e ideas innovadoras y
+          creativa
+        </p>
+      </article>
+      <article>
+        <h2>Ejecución</h2>
+        <p>Obtén asesoramiento y acompañamiento en tus proyectos</p>
+      </article>
+    </section>
+  </Section>
   <ProjectList />
   <RecentPosts postList={lastThreePosts} />
   <CTA />
